@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZEN Mods</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#0a0a0a;
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(0,0,0,0.9);
+    border-bottom:1px solid #222;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    height:60px;
+}
+
+.links a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+.links a:hover{
+    opacity:.7;
+}
+
+.hero{
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:4.5rem;
+    margin-bottom:15px;
+    font-weight:800;
+}
+
+.hero p{
+    color:#999;
+    font-size:1.1rem;
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
+}
+
+.shop-btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 30px;
+    background:white;
+    color:black;
+    font-weight:600;
+    text-decoration:none;
+    border-radius:14px;
+}
+
+.products{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+    padding-bottom:80px;
+}
+
+.card{
+    background:#111;
+    border:1px solid #222;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#444;
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.content{
+    padding:25px;
+}
+
+.content h2{
+    margin-bottom:10px;
+}
+
+.content p{
+    color:#a0a0a0;
+    line-height:1.6;
+}
+
+.price{
+    font-size:1.8rem;
+    font-weight:700;
+    margin:20px 0;
+}
+
+.buy{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    background:white;
+    color:black;
+    padding:14px;
+    border-radius:12px;
+    font-weight:600;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    border-top:1px solid #222;
+    color:#777;
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <img src="logo.png" class="logo">
+
+    <div class="links">
+        <a href="#">Home</a>
+        <a href="#">Scooters</a>
+        <a href="#">E-Bikes</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>ZEN MODS</h1>
+
+    <p>
+        Premium modified Razor scooters and electric bikes designed
+        for speed, performance, and style.
+    </p>
+
+    <a href="#products" class="shop-btn">Shop Now</a>
+</section>
+
+<section class="products" id="products">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1571333250630-f0230c320b6d">
+        <div class="content">
+            <h2>72V Razor MX650</h2>
+            <p>
+                Upgraded battery, high-performance controller,
+                hydraulic brakes, and custom tuning.
+            </p>
+            <div class="price">$2,199</div>
+
+            <a href="https://yourwebsite.com" class="buy">
+                Buy Now
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39">
+        <div class="content">
+            <h2>ZEN E-Bike Pro</h2>
+            <p>
+                Long range battery with premium suspension
+                and powerful hub motor.
+            </p>
+            <div class="price">$3,499</div>
+
+            <a href="https://yourwebsite.com" class="buy">
+                Buy Now
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1511994298241-608e28f14fde">
+        <div class="content">
+            <h2>Stealth Racer</h2>
+            <p>
+                Lightweight frame, extended range,
+                and smooth acceleration.
+            </p>
+
+            <div class="price">$2,999</div>
+
+            <a href="https://yourwebsite.com" class="buy">
+                Buy Now
+            </a>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 ZEN Mods. All Rights Reserved.
+</footer>
+
+</body>
+</html>
